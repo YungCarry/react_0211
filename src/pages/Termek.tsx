@@ -3,6 +3,7 @@ import { Product } from '../types/Product';
 import apiClient from '../apiClient/apiClient';
 import { useParams } from 'react-router-dom';
 import { error } from 'console';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 const Termek = () => {
     const [data, setData] = useState<Product>();
@@ -73,13 +74,13 @@ const Termek = () => {
         <div>
             <h1>TermékID: {id}</h1>
 
-            <ul>
-                <li> Név: {data?.nev}</li>
-                <li> Ár: {data?.ar}</li>
-                <li> Készlet: {data?.keszlet}</li>
-                <li> Leírás: {data?.leiras}</li>
-                <li> Kép: {data?.kepUrl}</li>
-            </ul>
+            <ListGroup>
+                <ListGroup.Item variant="info">Név: {data?.nev}</ListGroup.Item>
+                <ListGroup.Item>Ár: {data?.ar}</ListGroup.Item>
+                <ListGroup.Item>Készlet: {data?.keszlet}</ListGroup.Item>
+                <ListGroup.Item>Leírás: {data?.leiras}</ListGroup.Item>
+                <ListGroup.Item>Kép: {data?.kepUrl}</ListGroup.Item>
+            </ListGroup>
 
             <input
                 type="text"
