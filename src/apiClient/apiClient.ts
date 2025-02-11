@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const config = { baseURL: 'https://faiskola.richardkorom.hu/api' };
+const config = { baseURL: 'http://localhost:8000/api' };
 
 const apiClient = axios.create(config);
 
