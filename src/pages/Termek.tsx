@@ -78,6 +78,7 @@ const Termek = () => {
                 <li> Ár: {data?.ar}</li>
                 <li> Készlet: {data?.keszlet}</li>
                 <li> Leírás: {data?.leiras}</li>
+                <li> Kép: {data?.kepUrl}</li>
             </ul>
 
             <input

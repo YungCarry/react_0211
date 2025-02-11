@@ -26,6 +26,7 @@ const Termekek = () => {
                         <th>Ár:</th>
                         <th>Leírás:</th>
                         <th>Készlet:</th>
+                        <th>Kép:</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,6 +37,7 @@ const Termekek = () => {
                             <td>{product.ar}</td>
                             <td>{product.leiras}</td>
                             <td>{product.keszlet}</td>
+                            <td>{product.kepUrl}</td>
                         </tr>
                     ))}
                 </tbody>
