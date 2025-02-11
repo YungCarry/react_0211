@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import apiClient from '../apiClient/apiClient';
+import Button from 'react-bootstrap/Button';
 
 const TermekPost = () => {
     const [ar, setAr] = useState<number>();
@@ -90,7 +91,9 @@ const TermekPost = () => {
                 }}
             />
 
-            <button onClick={submit_product}>Add hozzá!</button>
+            <Button variant="outline-primary" onClick={submit_product}>
+                Add hozzá!
+            </Button>
         </div>
     );
 };
